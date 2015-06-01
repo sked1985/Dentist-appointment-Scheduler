@@ -1,0 +1,15 @@
+<ion-view view-title="List of clinics">
+  <ion-content>
+    <div class="list">
+
+       <a ng-repeat="item in items"
+          href="#/{{item.id}}"
+          class="item item-thumbnail-left">
+
+         <img ng-src="{{ item.image }}">
+         <h2>{{ item.county }}</h2>
+       </a>
+
+     </div>
+  </ion-content>
+</ion-view>

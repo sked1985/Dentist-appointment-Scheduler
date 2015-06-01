@@ -1,0 +1,31 @@
+<ion-view view-title="Home" hide-back-button="true">
+  <ion-nav-buttons side="right">
+    <a class="button button-energized" ng-click="openAbout()" nav-clear>About</a>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <div class="card">
+      <div class="item item-divider">
+        Hello user
+      </div>
+      <div class="item item-text-wrap">
+        Welcome to the dentist appointment scheduler. Select your location and make an appointment
+      </div>
+    </div>
+    <ion-list>
+      <div class="card">
+        <div class="item item-divider">
+          What province are you in?
+        </div>
+      <ion-item ng-repeat="province in provinces" ng-href="#/app/provinces/{{province.id}}">
+        {{province.title}}
+        <span class="badge badge-positive icon-badge">{{province.clinics}}</span>
+      </ion-item>
+    </div>
+    </ion-list>
+    <div class="card">
+      <div class="item item-icon-left energized">
+        <i class="icon ion-chatbubble-working" ng-click="openComments()"></i>Send us a Comment
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

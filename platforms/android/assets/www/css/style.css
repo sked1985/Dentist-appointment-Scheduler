@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+#tour-template .slider{
+  height: 100%;
+}
+
+#tour-template .slider-slide{
+  padding-top: 80px;
+  text-align: center;
+}
+#tour-template .icon-slide{
+  font-size: 20em;
+  display: inline-block;
+}
