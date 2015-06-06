@@ -8,7 +8,7 @@
         Hello user
       </div>
       <div class="item item-text-wrap">
-        Welcome to the dentist appointment scheduler. Select your location and make an appointment
+      {{description}}
       </div>
     </div>
     <ion-list>
@@ -18,12 +18,12 @@
         </div>
       <ion-item ng-repeat="province in provinces" ng-href="#/app/provinces/{{province.id}}">
         {{province.title}}
-        <span class="badge badge-positive icon-badge">{{province.clinics}}</span>
+        <span class="badge badge-energized icon-badge">{{province.clinics}}</span>
       </ion-item>
     </div>
     </ion-list>
     <div class="card">
-      <div class="item item-icon-left energized">
+      <div class="item item-icon-left royal">
         <i class="icon ion-chatbubble-working" ng-click="openComments()"></i>Send us a Comment
       </div>
     </div>

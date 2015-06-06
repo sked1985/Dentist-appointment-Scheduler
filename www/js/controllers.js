@@ -37,6 +37,8 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope, $ionicModal) {
 
+  $scope.description="  Welcome to the dentist appointment scheduler. Select your location and make an appointment"
+
   $scope.openAbout = function(){
     $ionicModal.fromTemplateUrl('templates/about.html', {
       scope: $scope,
@@ -73,7 +75,7 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('LeinsterCtrl', function($scope, $stateParams, $ionicLoading, $timeout) {
+.controller('ProvincesCtrl', function($scope, $stateParams, $ionicLoading, $timeout) {
 
     $ionicLoading.show({
       content: 'Loading',
@@ -124,4 +126,68 @@ angular.module('starter.controllers', [])
 
 
 
+})
+
+.controller('ImageGalleryCtrl', function($scope){
+  $scope.items = [
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg',
+    sub: 'This is a <b>subtitle</b>'
+  },
+  {
+    src:'http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg',
+    sub: '' /* Not showed */
+  },
+  {
+    src:'http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg'
+  }
+]
 });
