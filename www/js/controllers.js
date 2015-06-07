@@ -128,6 +128,13 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('DoctorsCtrl', function($scope, Doctors){
+
+  $scope.doctors = Doctors.all();
+  
+
+})
+
 .controller('ImageGalleryCtrl', function($scope){
   $scope.items = [
   {

@@ -1,0 +1,13 @@
+<ion-view view-title="Doctors">
+  <ion-content>
+    <div style="height: 64px;"></div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="doctor in doctors" type="item-text-wrap">
+        <img ng-src ="{{doctor.face}}">
+        <h2>{{doctor.name}}</h2>
+        <p>{{doctor.tagLine}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

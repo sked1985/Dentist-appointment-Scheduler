@@ -4,7 +4,15 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ion-gallery'])
+
+.directive('fakeStatusbar', function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '<div class="fake-statusbar"><div class="pull-left">Carrier</div><div class="time">3:30 PM</div><div class="pull-right">50%</div></div>'
+  }
+})
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -62,6 +70,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
         'menuContent': {
           templateUrl: "templates/home.html",
           controller: 'HomeCtrl'
+        }
+      }
+    })
+
+    .state('app.doctors',{
+      url: "/doctors",
+      views: {
+        'menuContent':{
+          templateUrl: "templates/doctors.html",
+          controller: "DoctorsCtrl"
         }
       }
     })
