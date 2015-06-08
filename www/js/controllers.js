@@ -2,6 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, $location) {
 
+  $scope.title="DENTIST SCHEDULER"
+
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -36,6 +38,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('HomeCtrl', function($scope, $ionicModal) {
+
+  $scope.title="DENTIST SCHEDULER"
 
   $scope.description="  Welcome to the dentist appointment scheduler. Select your location and make an appointment"
 
@@ -124,6 +128,12 @@ angular.module('starter.controllers', [])
       {id:12, county: 'Wicklow', artist: 'Nickelback', image: 'http://upload.wikimedia.org/wikipedia/commons/7/73/Wicklow_county_arms.png'}
     ];},2000);
 
+
+
+})
+.controller('BrowseCtrl', function($scope, Doctors){
+
+  $scope.title="Browse"
 
 
 })
